@@ -163,8 +163,11 @@ background-image: var(--bg-gradient), url(../images/header-bg.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-padding-top: 197px;
+padding-top: 188px;
 padding-bottom: 188px;
+max-width: 1440px;
+margin-right: auto;
+margin-left: auto;
 }
 
 .main-title {
@@ -173,7 +176,6 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color:var(--main-title-color);
-
 margin: 0 auto;
 max-width: 496px;
 }
@@ -230,14 +232,15 @@ background-color: var(--backgraund-fon);
 display: flex;
 align-items: center;
 justify-content: center;
-width: 100%;
-height: 112p;
+width: 264px;
+height: 112px;
 margin-bottom: 8px;
 border-radius: 4px;
 }
 
 
 .hero-title {
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
@@ -245,6 +248,9 @@ color:var(--color-span);
 margin-bottom: 8px;
 }
 
+.hero-link {
+width: calc((100% - 72px) / 4);
+}
 
 
 .hero-text {
@@ -260,8 +266,9 @@ color:var(--color-adress);
 padding-bottom: 120px;
 }
 
-.section-link {
-width: calc((100% - 48px)/ 3);
+
+.section-first-link {
+width: calc((100% - 48px) / 3);
 }
 
 
@@ -357,9 +364,11 @@ align-items: center;
 justify-content: center;
 }
 
-.section-image-link:hover
+
+.section-image-link:hover,
 .section-image-link:focus {
 background-color:var(--main-title-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-soc-icon {
@@ -372,7 +381,6 @@ fill:var(--main-title-color);
 .company {
 padding-top: 120px;
 padding-bottom: 120px;
-
 }
 
 .company-title {
@@ -388,7 +396,6 @@ margin-bottom: 72px;
 
 
 .company-list {
-display: flex;
 justify-content: center;
 gap: 24px;
 }
@@ -396,6 +403,7 @@ gap: 24px;
 .company-item {
 width: 168px;
 height: 88px;
+display: flex;
 }
 
 .company-link {
@@ -406,11 +414,10 @@ border-radius: 4px;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 16px 32px;
 color: var(--company-color);
 }
 
-.company-link:hover
+.company-link:hover,
 .company-link:focus {
 color: var(--third-tittle-color);
 }
@@ -418,6 +425,7 @@ color: var(--third-tittle-color);
 .company-icon {
 fill: currentColor;
 }
+
 
 /*-- Footer --*/
 .footer-main {
@@ -494,6 +502,12 @@ align-items: center;
 justify-content: center;
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+background-color:var(--main-title-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .footer-social-icon {
 fill:var(--backgraund-fon);
 width: 20px;
@@ -557,12 +571,16 @@ margin-top: 72px;
 gap: 48px 24px;
 }
 
+.category-item {
+display: block;
+}
+
 .category-link {
 width: calc((100% - 48px) / 3);
 }
 
-.category-link:hover,
-.category-link:focus {
+.category-item:hover,
+.category-item:focus {
 box-shadow: 
 0px 1px 6px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16),
