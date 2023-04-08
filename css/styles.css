@@ -12,7 +12,7 @@
 rgba(46, 47, 66, 0.7),
 rgba(46, 47, 66, 0.7));
 --company-color: #8E8F99;
---focus-icon-color:green; 
+--focus-icon-color: #31D0AA; 
 }
 
 p,h1,h2,h3,h4,h5,h6 {
@@ -570,12 +570,15 @@ gap: 48px 24px;
 }
 
 .category-link {
-display: block;
 width: calc((100% - 48px) / 3);
 }
 
-.category-link:hover,
-.category-link:focus {
+.category-item {
+    display: block;
+}
+
+.category-item:hover,
+.category-item:focus {
 box-shadow: 
 0px 1px 6px rgba(46, 47, 66, 0.08),
 0px 1px 1px rgba(46, 47, 66, 0.16),
